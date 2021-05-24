@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://www.frontendmentor.io/profile/dalvinderjitsingh](https://www.frontendmentor.io/profile/dalvinderjitsingh)
+- Solution URL: [https://www.frontendmentor.io/solutions/responsive-card-using-html-and-css--l6vYO-v2](https://www.frontendmentor.io/solutions/responsive-card-using-html-and-css--l6vYO-v2)
 - Live Site URL: [https://dalvinderjitsingh.github.io/frontend-mentor-challenges/stats-preview-card-component](https://dalvinderjitsingh.github.io/frontend-mentor-challenges/stats-preview-card-component)
 
 ## My process
