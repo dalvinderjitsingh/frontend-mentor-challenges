@@ -12,7 +12,9 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
 - [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -43,7 +45,7 @@ Users should be able to:
 
 ### What I learned
 
-I learned how to add a filter on an image by overlaying a div on top of the image and setting the prefered background colour and amount of opacity.
+I learned how to add a filter to an image. At first, I achieved this by overlaying a div on top of the image and setting the prefered background colour and amount of opacity.
 
 To see what I mean, check out the code snippet below:
 
@@ -51,9 +53,7 @@ To see what I mean, check out the code snippet below:
 <div id="hero-image">
   <img
     src="images/image-header-desktop.jpg"
-    alt="A group of women working together and using their laptop."
-    width="100%"
-    height="100%"
+    alt="Three people are sitting at a table. Two are using their laptops and another is smiling while looking towards their left."
   />
   <div id="img-overlay"></div>
 </div>
@@ -61,17 +61,17 @@ To see what I mean, check out the code snippet below:
 
 ```css
 #hero-image {
-  width: 50%;
+  width: 49%;
   height: 100%;
   position: relative;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
 img {
   display: block;
   max-width: 100%;
   height: 100%;
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
 }
 
 #img-overlay {
@@ -85,12 +85,52 @@ img {
 }
 ```
 
+However, after receiving feedback to try out the CSS mix-blend-mode property and to set the value to multiply, I learned that this method was much simpler and decided to use it instead.
+
+To see what I mean, check out the code snippet below:
+
+```html
+<div class="hero-image">
+  <img
+    src="images/image-header-desktop.jpg"
+    alt="Three people are sitting at a table. Two are using their laptops and another is smiling while looking towards their left."
+  />
+</div>
+```
+
+```css
+.hero-image {
+  width: 49%;
+  height: 100%;
+  background-color: hsl(277, 64%, 61%);
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: 100%;
+  mix-blend-mode: multiply;
+  opacity: 0.75;
+}
+```
+
 ### Continued development
 
-I would like to learn more about the CSS filter property and how to add visual effects to images.
+I would like to learn more about the CSS filter and mix-blend-mode property and usefull ways to add visual effects to images. I would also like to learn more about html and css accessibility best practices.
+
+### Useful resources
+
+- [W3Schools](https://www.w3schools.com/cssref/pr_mix-blend-mode.asp) - This is a resource I'd recommend to anyone who wants to learn about the CSS mix-blend-mode property.
+- [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/mix-blend-mode) - This is another resource I'd recommend to anyone who wants to learn about the CSS mix-blend-mode property.
 
 ## Author
 
 - Website - [Dalvinderjit Singh](https://dalvinderjitsingh.github.io/)
 - Frontend Mentor - [@dalvinderjitsingh](https://www.frontendmentor.io/profile/dalvinderjitsingh)
 - Twitter - [@dalvinderjit01](https://twitter.com/dalvinderjit01)
+
+## Acknowledgments
+
+I would like to thank every Frontend Mentor community member's solution which I drew insight and inspiration from and also @palprogramming and @grace-snow for providing helpful feedback on my solution.
