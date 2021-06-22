@@ -67,6 +67,7 @@ main {
   background-color: white;
   margin: 25px;
   border-radius: 15px;
+  box-shadow: 0rem 0rem 10rem 1rem hsl(185deg 75% 30%);
 }
 
 .profile-header {
