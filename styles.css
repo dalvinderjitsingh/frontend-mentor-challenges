@@ -15,6 +15,9 @@ html {
 }
 
 body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr auto;
   background-color: white;
   color: #202124;
   font-family: "Roboto", sans-serif;
@@ -23,12 +26,10 @@ body {
 /* BASE STYLES */
 
 h1 {
-  color: #202124;
   font: 500 3rem "Roboto", sans-serif;
 }
 
 h2 {
-  color: #202124;
   font: 400 2.5rem "Roboto", sans-serif;
 }
 
@@ -38,12 +39,10 @@ h3 {
 }
 
 h4 {
-  color: #202124;
   font: 500 1.6rem "Roboto", sans-serif;
 }
 
 p {
-  color: #202124;
   font: 400 1.6rem "Roboto", sans-serif;
 }
 
@@ -126,7 +125,8 @@ header a {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 2.5rem;
-  margin-bottom: 5rem;
+  padding-bottom: 2.5rem;
+  border-bottom: solid 1px #dadce0;
 }
 
 .projects-section h1 {
@@ -166,6 +166,7 @@ header a {
 /* FOOTER */
 
 footer {
+  margin-top: 5rem;
   border-top: 1px solid #dadce0;
   border-bottom: 1px solid #dadce0;
   padding: 3.2rem 0;
@@ -178,7 +179,8 @@ footer li {
 
 .footer-heading-1 {
   margin-bottom: 2px;
-  font-weight: 700;
+  font-weight: 900;
+  color: #202124;
 }
 
 .brand-ul,
