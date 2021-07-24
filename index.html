@@ -4,25 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor Solutions</title>
+    <meta name="description" content="Frontend Mentor challenges projects done by Dalvinderjit Singh.">
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2250%22 fill=%22%23000000%22></rect><path fill=%22%23fff%22 d=%22M45.47 81.28L26.09 81.28L26.09 18.72L45.34 18.72Q53.59 18.72 60.10 22.44Q66.61 26.15 70.26 33.01Q73.91 39.86 73.91 48.58L73.91 48.58L73.91 51.46Q73.91 60.18 70.32 66.97Q66.74 73.76 60.21 77.50Q53.67 81.24 45.47 81.28L45.47 81.28ZM45.34 29.16L38.98 29.16L38.98 70.93L45.21 70.93Q52.77 70.93 56.77 65.98Q60.76 61.04 60.85 51.85L60.85 51.85L60.85 48.54Q60.85 39 56.90 34.08Q52.94 29.16 45.34 29.16L45.34 29.16Z%22></path></svg>" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
-        rel="stylesheet">
-    <script>
-        /* Hide Menu on Scroll */
-        var prevScrollpos = window.pageYOffset;
-        window.onscroll = function () {
-            var currentScrollPos = window.pageYOffset;
-            if (prevScrollpos > currentScrollPos) {
-                document.getElementById("navbar").style.top = "0";
-            } else {
-                document.getElementById("navbar").style.top = "-102px";
-            }
-            prevScrollpos = currentScrollPos;
-        }
-    </script>
-    <title>Frontend Mentor Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -61,21 +49,21 @@
                     target="_blank" class="project-tile">
                     <img class="project-image" src="./stats-preview-card-component/screenshot.png"
                         alt="Screenshot of the solution." />
-                    <h3 class="project-title">Stats preview card component</h3>
+                    <h2 class="project-title">Stats preview card component</h2>
                 </a>
 
                 <a href="https://dalvinderjitsingh.github.io/frontend-mentor-challenges/3-column-preview-card-component/"
                     target="_blank" class="project-tile">
                     <img class="project-image" src="./3-column-preview-card-component/screenshot.png"
                         alt="Screenshot of the solution." />
-                    <h3 class="project-title">3-column preview card component</h3>
+                    <h2 class="project-title">3-column preview card component</h2>
                 </a>
 
                 <a href="https://dalvinderjitsingh.github.io/frontend-mentor-challenges/profile-card-component/"
                     target="_blank" class="project-tile">
                     <img class="project-image" src="./profile-card-component/screenshot.png"
                         alt="Screenshot of the solution." />
-                    <h3 class="project-title">Profile card component</h3>
+                    <h2 class="project-title">Profile card component</h2>
                 </a>
             </div>
     </section>
@@ -90,7 +78,7 @@
 
                 <ul class="brand-ul">
                     <li class="footer-heading-li-1">
-                        <h4 class="footer-heading-1">Dalvinderjit Singh</h4>
+                        <h3 class="footer-heading-1"><a class="name" href="https://dalvinderjitsingh.github.io/">Dalvinderjit Singh</a></h3>
 
                         <img class="flag-icon" src="https://www.countryflags.io/MY/flat/48.png"
                             alt="Flag of Malaysia" />
@@ -101,7 +89,7 @@
 
                     <ul class="details-ul">
                         <li class="footer-heading-li">
-                            <h4 class="footer-heading-2">Details</h4>
+                            <h3 class="footer-heading-2">Details</h3>
                         </li>
                         <li>
                             <a href="https://github.com/dalvinderjitsingh/frontend-mentor-challenges"
@@ -115,7 +103,7 @@
 
                     <ul>
                         <li class="footer-heading-li">
-                            <h4 class="footer-heading-3">Social</h4>
+                            <h3 class="footer-heading-3">Social</h3>
                         </li>
                         <li>
                             <a href="https://github.com/dalvinderjitsingh" target="_blank" class="btn social-details"><i
@@ -139,6 +127,24 @@
     </footer>
 
     <!-- END FOOTER -->
+
+    <!-- START JAVASCRIPT -->
+
+    <script>
+        /* Hide Menu on Scroll */
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+        } else {
+            document.getElementById("navbar").style.top = "-102px";
+        }
+        prevScrollpos = currentScrollPos;
+        }
+    </script>
+
+    <!-- END JAVASCRIPT -->
 
 </body>
 
