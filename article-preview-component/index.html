@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Article preview component</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <div class="main-and-footer-wrapper">
+      <main>
+        <!-- HERO IMAGE START -->
+        <div class="drawers-img-container">
+          <img class="drawers-img" src="./images/drawers.jpg" />
+        </div>
+        <!-- HERO IMAGE END -->
+
+        <div class="content">
+          <!-- HEADING AND INFO START -->
+          <h1>
+            Shift the overall look and feel by adding these wonderful touches to
+            furniture in your home
+          </h1>
+
+          <p class="info">
+            Ever been in a room and felt like something was missing? Perhaps it
+            felt slightly bare and uninviting. I’ve got some simple tips to help
+            you make any room feel complete.
+          </p>
+          <!-- HEADING AND INFO END -->
+
+          <div class="michelle-and-share-btn-container">
+            <!-- ABOUT MICHELLE START -->
+            <div class="michelle-container">
+              <img class="avatar" src="./images/avatar-michelle.jpg" />
+
+              <div>
+                <p class="name">Michelle Appleton</p>
+                <p class="date">28 Jun 2020</p>
+              </div>
+            </div>
+            <!-- ABOUT MICHELLE END -->
+
+            <!-- SHARE BUTTON START -->
+            <button id="shareBtn" class="share-btn">
+              <img class="share-icon" src="./images/icon-share.svg" />
+            </button>
+            <!-- SHARE BUTTON END -->
+          </div>
+        </div>
+
+        <!-- SHARE POP-UP START -->
+        <div id="popUp" class="pop-up">
+          <div class="share-text-and-social-icons-wrapper">
+            <p class="share-text">Share</p>
+            <img class="fb-icon" src="./images/icon-facebook.svg" />
+            <img class="t-icon" src="./images/icon-twitter.svg" />
+            <img class="p-icon" src="./images/icon-pinterest.svg" />
+          </div>
+
+          <div class="arrow-down"></div>
+        </div>
+        <!-- SHARE POP-UP END -->
+      </main>
+
+      <!-- FOOTER START -->
+      <footer class="attribution">
+        <p>
+          Challenge by
+          <a
+            href="https://www.frontendmentor.io?ref=challenge"
+            target="_blank"
+            rel="noopener"
+            >Frontend Mentor</a
+          >. Coded by
+          <a href="https://dalvinderjitsingh.github.io/">Dalvinderjit Singh</a>.
+        </p>
+      </footer>
+      <!-- FOOTER END -->
+    </div>
+  </body>
+</html>
