@@ -47,6 +47,7 @@ main {
   margin: 2.5rem;
   background-color: white;
   border-radius: 1.3rem;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
 /* HERO IMAGE */
@@ -122,6 +123,17 @@ h1 {
 
 .share-btn:active {
   filter: brightness(0.85);
+}
+
+/* Make icon heading visually hidden yet accessible */
+.visually-hidden-icon-heading:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 
 /* SHARE POP-UP */
